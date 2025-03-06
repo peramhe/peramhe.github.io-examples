@@ -123,7 +123,7 @@ If (![String]::IsNullOrEmpty($LastError.InvocationInfo.ScriptName)) {
     $Prompt += @"
     
 The error occurred in the following script:
-$($LastError.InvocationInfo.ScriptName)
+$(Get-Content $LastError.InvocationInfo.ScriptName)
 "@
 } else {
     $Prompt += @"
