@@ -17,6 +17,7 @@ Contact: peramhe.github.io
 
 #>
 
+$ErrorActionPreference = "Stop"
 
 Function Invoke-StreamingOllamaCompletion {
     <#
